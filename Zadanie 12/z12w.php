@@ -15,7 +15,7 @@
         $max = $_POST['val-2'];
         $nums = [];
         $sum = 0;
-        $multiply = 0;
+        $multiply = 1;
         $avg = 0;
 
         if($min < $max && $min > 0){
@@ -28,7 +28,10 @@
             }
             $avg = $sum / 5;
         }
-        echo "<h2>$nums $sum $multiply $avg</h2>";
+        echo "<ul><li>$nums[0]</li><li>$nums[1]</li><li>$nums[2]</li><li>$nums[3]</li><li>$nums[4]</li></ul>";
+        echo "<h2>Suma: $sum</h2>";
+        echo "<h2>Iloczyn: $multiply</h2>";
+        echo "<h2>Średnia: $avg</h2>";
     ?>
 </section>
 </body>
